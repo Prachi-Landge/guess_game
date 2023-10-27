@@ -1,0 +1,46 @@
+body{
+    background-color: #212121;
+    color: white;
+}
+.abtgame{
+    /* border: 2px solid gray; */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    
+}
+body{
+ justify-content: center;
+ align-items: center;
+}
+
+#sbmt{
+  display: inline;
+  cursor: pointer;
+  background-color: gray;
+  padding: 8px;
+  border-radius: 2px;
+  font-size: 9px;
+  /* width: 11vw; */
+  /* height: 8vh; */
+  text-align: center;
+  font-weight: 600;
+  color: black;
+}
+#sbmt:hover{
+    color: gray;
+    background-color: black;
+}
+#newGame{
+    display: inline;
+  cursor: pointer;
+  background-color: gray;
+  padding: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  border: 2px solid black;
+  text-align: center;
+  font-weight: 600;
+  color: black;
+}
