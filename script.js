@@ -2,7 +2,7 @@ let randomNo = parseInt(Math.random() * 100 + 1);
 const submit = document.querySelector("#sbmt");
 const userInput = document.querySelector("#guessfield");
 const guessSlot = document.querySelector(".prevGuess"); 
-const remaining = document.querySelector(".remGuess");
+const remaining = document.querySelector(".numGuess");
 const startOver = document.querySelector(".resultPara");
 const lowOrHi = document.querySelector(".low_hi");
 
@@ -57,6 +57,15 @@ function dispalyGuess(guess) {
   guessSlot.innerHTML += `${guess} , `;
   numGuess++;
   remaining.innerHTML = `${11 - numGuess}`;
+  const numGuessElement = document.querySelector('.numGuess');
+  if (numGuess >= 8) {
+    numGuessElement.style.color = 'red';
+  } else {
+    numGuessElement.style.color = 'white';
+  }
+  if(numGuess == 12){
+    remaining.innerHTML = "No more chances!"
+  }
 }
 
 function displayMessage(message) {
